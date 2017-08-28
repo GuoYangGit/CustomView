@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.guoyang.customview.ColorTrackTextView.ColorTrackActivity;
 import com.example.guoyang.customview.QQStepView.QQStepActivity;
 import com.example.guoyang.customview.QQStepView.QQStepView;
 
@@ -18,5 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void QQStepview(View view){
         startActivity(new Intent(this,QQStepActivity.class));
+    }
+
+    public void ColorTrackTextview(View view) {
+        startActivity(new Intent(this,ColorTrackActivity.class));
     }
 }

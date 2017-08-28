@@ -60,6 +60,7 @@ public class QQStepView extends View{
         mOutPaint.setStrokeWidth(mBorderWidth);
         //画笔的颜色
         mOutPaint.setColor(mOuterColor);
+        //画笔冒样式
         mOutPaint.setStrokeCap(Paint.Cap.ROUND);
         //画笔空心
         mOutPaint.setStyle(Paint.Style.STROKE);
@@ -72,6 +73,7 @@ public class QQStepView extends View{
         mInnerPaint.setStrokeWidth(mBorderWidth);
         //画笔的颜色
         mInnerPaint.setColor(mInnerColor);
+        //画笔冒样式
         mInnerPaint.setStrokeCap(Paint.Cap.ROUND);
         //画笔空心
         mInnerPaint.setStyle(Paint.Style.STROKE);
@@ -89,6 +91,7 @@ public class QQStepView extends View{
         //调用者在布局文件中可能是 wrap_content 宽度高度不一致取最小值
         int width = MeasureSpec.getSize(widthMeasureSpec);
         int height = MeasureSpec.getSize(heightMeasureSpec);
+        //设置view为矩形，选取最小的值为宽高
         setMeasuredDimension(width>height?height:width,width>height?height:width);
     }
 
@@ -97,9 +100,10 @@ public class QQStepView extends View{
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         //1.画外圆弧
-        int center = getWidth()/2;
-        int radius = getWidth()/2-mBorderWidth;
-        RectF rectF = new RectF(center-radius,center-radius,center+radius,center+radius);
+//        int center = getWidth()/2;
+//        int radius = getWidth()/2-mBorderWidth;
+//        RectF rectF = new RectF(center-radius,center-radius,center+radius,center+radius);
+        RectF rectF = new RectF(mBorderWidth,mBorderWidth,getWidth()-mBorderWidth,getHeight()-mBorderWidth);
         canvas.drawArc(rectF,135,270,false,mOutPaint);
         //2.画内圆弧，百分比，用户设置
         if (mMaxStep == 0) return;

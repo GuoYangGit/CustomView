@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QQStepView.QQStepActivity"></activity>
+        <activity android:name=".QQStepView.QQStepActivity" />
+        <activity android:name=".ColorTrackTextView.ColorTrackActivity"></activity>
     </application>
 
 </manifest>

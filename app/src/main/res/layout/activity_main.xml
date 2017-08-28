@@ -13,6 +13,9 @@
         android:text="仿qq计步器"
         android:onClick="QQStepview"/>
     <Button
+        android:id="@+id/ColorTrackTextview"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="字体变色"
+        android:onClick="ColorTrackTextview"/>
 </LinearLayout>
