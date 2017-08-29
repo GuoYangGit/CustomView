@@ -18,4 +18,9 @@
         <attr name="progressTextSize" format="dimension" />
         <attr name="progressTextColor" format="color" />
     </declare-styleable>
+    <declare-styleable name="RatingBarView">
+        <attr name="starNormal" format="reference" />
+        <attr name="starFocus" format="reference" />
+        <attr name="gradeNumber" format="integer" />
+    </declare-styleable>
 </resources>

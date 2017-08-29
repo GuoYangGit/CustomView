@@ -24,8 +24,17 @@
         android:layout_height="wrap_content"
         android:text="进度条"
         android:onClick="ProgressBarView"/>
-    <com.example.guoyang.customview.shapeView.ShapeView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:id="@+id/shape_view"/>
+    <Button
+        android:id="@+id/ShapeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="58同城加载动画"
+        android:onClick="ShapeView"/>
+    <Button
+        android:id="@+id/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评分控件"
+        android:onClick="RatingBar"/>
+
 </LinearLayout>

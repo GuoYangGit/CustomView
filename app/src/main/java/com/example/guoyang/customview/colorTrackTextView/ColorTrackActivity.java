@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -16,11 +17,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ColorTrackActivity extends AppCompatActivity {
-    private String[] items = {"直播", "推荐", "视频", "图片", "段子"};
+    private String[] items = {"直播", "推荐", "视频", "图片", "段子","文字"};
     private LinearLayout mIndicatorContainer;
     private List<ColorTrackTextView> mIndicators;
     private ViewPager mViewpager;
-    private int lastposition = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +84,6 @@ public class ColorTrackActivity extends AppCompatActivity {
                 ColorTrackTextView right = mIndicators.get(position + 1);
                 right.setDirection(ColorTrackTextView.Direction.LETF_TO_RIGHT);
                 right.setCurrentProgress(positionOffset);
-                lastposition = position;
             }
 
             @Override

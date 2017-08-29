@@ -7,6 +7,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.example.guoyang.customview.R;
@@ -22,9 +23,11 @@ public class ColorTrackTextView extends TextView {
     private float mCurrentProgress = 0.0f;
 
     private Direction mDirection = Direction.LETF_TO_RIGHT;
-    public enum Direction{
-        LETF_TO_RIGHT,RIGHT_TO_LEFT;
-    };
+
+    public enum Direction {
+        LETF_TO_RIGHT, RIGHT_TO_LEFT;
+    }
+
 
     public ColorTrackTextView(Context context) {
         this(context, null);
@@ -66,28 +69,23 @@ public class ColorTrackTextView extends TextView {
     @Override
     protected void onDraw(Canvas canvas) {
         //super.onDraw(canvas);
-
         //根据进度把中间值算出来
         int middle = (int) (mCurrentProgress * getWidth());
-        if (mDirection == Direction.LETF_TO_RIGHT){
-            //来画不变色的字体
-            drawText(canvas,mChangePaint,0,middle);
-            //绘制变色的字体
-            drawText(canvas,mOriginPaint,middle,getWidth());
-        }else {
-            //来画不变色的字体
-            drawText(canvas,mChangePaint,getWidth()-middle,getWidth());
-            //绘制变色的字体
-            drawText(canvas,mOriginPaint,0,getWidth()-middle);
+        if (mDirection == Direction.LETF_TO_RIGHT) {
+            //来画变色的字体
+            drawText(canvas, mChangePaint, 0, middle);
+            //绘制不变色的字体
+            drawText(canvas, mOriginPaint, middle, getWidth());
+        } else if (mDirection == Direction.RIGHT_TO_LEFT) {
+            //来画变色的字体
+            drawText(canvas, mChangePaint, getWidth() - middle, getWidth());
+            //绘制不变色的字体
+            drawText(canvas, mOriginPaint, 0, getWidth() - middle);
         }
     }
 
     private void drawText(Canvas canvas, Paint paint, int start, int end) {
         canvas.save();
-        //canvas.clipRect()裁剪区域
-        Rect rect = new Rect(start, 0, end, getHeight());
-        canvas.clipRect(rect);
-
         String text = getText().toString();
         Rect bounds = new Rect();
         paint.getTextBounds(text, 0, text.length(), bounds);
@@ -97,25 +95,27 @@ public class ColorTrackTextView extends TextView {
         Paint.FontMetricsInt fontMetricsInt = paint.getFontMetricsInt();
         int dy = (fontMetricsInt.bottom - fontMetricsInt.top) / 2 - fontMetricsInt.bottom;
         int baseLine = getHeight() / 2 + dy;
+        //canvas.clipRect()裁剪区域
+        Rect rect = new Rect(start, 0, end, getHeight());
+        canvas.clipRect(rect);
         canvas.drawText(text, x, baseLine, paint);
         canvas.restore();
     }
 
-    public void setDirection(Direction direction){
+    public void setDirection(Direction direction) {
         this.mDirection = direction;
     }
 
-    public void setCurrentProgress(float currentProgress){
+    public void setCurrentProgress(float currentProgress) {
         this.mCurrentProgress = currentProgress;
         invalidate();
     }
 
-    public void setChangeColor(int changeColor){
+    public void setChangeColor(int changeColor) {
         this.mChangePaint.setColor(changeColor);
     }
 
-    public void setOriginColor(int originColor){
+    public void setOriginColor(int originColor) {
         this.mOriginPaint.setColor(originColor);
     }
-
 }
