@@ -19,8 +19,9 @@
         <attr name="progressTextColor" format="color" />
     </declare-styleable>
     <declare-styleable name="RatingBarView">
-        <attr name="starNormal" format="reference" />
-        <attr name="starFocus" format="reference" />
-        <attr name="gradeNumber" format="integer" />
+        <attr name="ratingBarStarNormal" format="reference" />
+        <attr name="ratingBarStarFocus" format="reference" />
+        <attr name="ratingBarGradeNumber" format="integer" />
+        <attr name="ratingBarPadding" format="dimension" />
     </declare-styleable>
 </resources>

@@ -10,8 +10,8 @@
     <com.example.guoyang.customview.ratingBarView.RatingBarView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:gradeNumber="5"
-        app:starFocus="@mipmap/star_selected"
-        app:starNormal="@mipmap/star_normal"/>
+        app:ratingBarGradeNumber="5"
+        app:ratingBarStarFocus="@mipmap/star_selected"
+        app:ratingBarStarNormal="@mipmap/star_normal" />
 
 </LinearLayout>
