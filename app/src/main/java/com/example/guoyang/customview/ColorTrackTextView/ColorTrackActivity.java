@@ -40,7 +40,7 @@ public class ColorTrackActivity extends AppCompatActivity {
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT);
             params.weight = 1;
-            final ColorTrackTextView colorTrackTextView = new ColorTrackTextView(this);
+            ColorTrackTextView colorTrackTextView = new ColorTrackTextView(this);
             colorTrackTextView.setTextSize(20);
             colorTrackTextView.setChangeColor(Color.RED);
             colorTrackTextView.setText(items[i]);

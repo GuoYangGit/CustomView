@@ -117,4 +117,5 @@ public class ColorTrackTextView extends TextView {
     public void setOriginColor(int originColor){
         this.mOriginPaint.setColor(originColor);
     }
+
 }
