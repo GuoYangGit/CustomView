@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.guoyang.customview.QQStepView.QQStepActivity">
+    tools:context="com.example.guoyang.customview.qqStepView.QQStepActivity">
 
-    <com.example.guoyang.customview.QQStepView.QQStepView
+    <com.example.guoyang.customview.qqStepView.QQStepView
         android:id="@+id/step_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

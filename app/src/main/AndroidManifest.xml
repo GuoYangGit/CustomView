@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QQStepView.QQStepActivity" />
-        <activity android:name=".ColorTrackTextView.ColorTrackActivity" />
-        <activity android:name=".ProgressBarView.ProgressBarActivity"></activity>
+        <activity android:name=".qqStepView.QQStepActivity" />
+        <activity android:name=".colorTrackTextView.ColorTrackActivity" />
+        <activity android:name=".progressBarView.ProgressBarActivity"></activity>
     </application>
 
 </manifest>

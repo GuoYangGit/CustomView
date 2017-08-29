@@ -24,4 +24,8 @@
         android:layout_height="wrap_content"
         android:text="进度条"
         android:onClick="ProgressBarView"/>
+    <com.example.guoyang.customview.shapeView.ShapeView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/shape_view"/>
 </LinearLayout>

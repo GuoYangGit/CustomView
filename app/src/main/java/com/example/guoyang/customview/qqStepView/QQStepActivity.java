@@ -1,4 +1,4 @@
-package com.example.guoyang.customview.QQStepView;
+package com.example.guoyang.customview.qqStepView;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;

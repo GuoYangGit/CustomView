@@ -1,4 +1,4 @@
-package com.example.guoyang.customview.ColorTrackTextView;
+package com.example.guoyang.customview.colorTrackTextView;
 
 import android.content.Context;
 import android.content.res.TypedArray;

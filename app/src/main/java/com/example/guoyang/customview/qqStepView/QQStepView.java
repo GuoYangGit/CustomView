@@ -1,4 +1,4 @@
-package com.example.guoyang.customview.QQStepView;
+package com.example.guoyang.customview.qqStepView;
 
 import android.content.Context;
 import android.content.res.TypedArray;

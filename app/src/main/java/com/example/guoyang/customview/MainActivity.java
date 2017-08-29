@@ -5,16 +5,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.guoyang.customview.ColorTrackTextView.ColorTrackActivity;
-import com.example.guoyang.customview.ProgressBarView.ProgressBarActivity;
-import com.example.guoyang.customview.QQStepView.QQStepActivity;
+import com.example.guoyang.customview.colorTrackTextView.ColorTrackActivity;
+import com.example.guoyang.customview.progressBarView.ProgressBarActivity;
+import com.example.guoyang.customview.qqStepView.QQStepActivity;
+import com.example.guoyang.customview.shapeView.ShapeView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ShapeView shapeView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        shapeView = (ShapeView) findViewById(R.id.shape_view);
     }
 
     public void QQStepview(View view){

@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.guoyang.customview.ColorTrackTextView.ColorTrackActivity">
+    tools:context="com.example.guoyang.customview.colorTrackTextView.ColorTrackActivity">
     <LinearLayout
         android:id="@+id/indicator_view"
         android:layout_width="match_parent"

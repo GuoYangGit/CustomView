@@ -1,4 +1,4 @@
-package com.example.guoyang.customview.ProgressBarView;
+package com.example.guoyang.customview.progressBarView;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
