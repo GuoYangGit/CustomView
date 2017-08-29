@@ -18,4 +18,10 @@
         android:layout_height="wrap_content"
         android:text="字体变色"
         android:onClick="ColorTrackTextview"/>
+    <Button
+        android:id="@+id/ProgressBarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进度条"
+        android:onClick="ProgressBarView"/>
 </LinearLayout>

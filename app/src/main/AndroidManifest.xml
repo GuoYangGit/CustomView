@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".QQStepView.QQStepActivity" />
-        <activity android:name=".ColorTrackTextView.ColorTrackActivity"></activity>
+        <activity android:name=".ColorTrackTextView.ColorTrackActivity" />
+        <activity android:name=".ProgressBar.ProgressBarActivity"></activity>
     </application>
 
 </manifest>

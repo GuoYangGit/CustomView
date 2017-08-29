@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.guoyang.customview.ColorTrackTextView.ColorTrackActivity;
+import com.example.guoyang.customview.ProgressBar.ProgressBarActivity;
 import com.example.guoyang.customview.QQStepView.QQStepActivity;
 import com.example.guoyang.customview.QQStepView.QQStepView;
 
@@ -23,5 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void ColorTrackTextview(View view) {
         startActivity(new Intent(this,ColorTrackActivity.class));
+    }
+
+    public void ProgressBarView(View view) {
+        startActivity(new Intent(this,ProgressBarActivity.class));
     }
 }
