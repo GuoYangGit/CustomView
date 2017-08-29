@@ -1,4 +1,4 @@
-package com.example.guoyang.customview.ProgressBar;
+package com.example.guoyang.customview.ProgressBarView;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -17,7 +17,7 @@ import com.example.guoyang.customview.R;
  * Created by guoyang on 2017/8/29.
  */
 
-public class ProgressBar extends View {
+public class ProgressBarView extends View {
     private int mOuterColor = Color.BLUE;
     private int mInnerColor = Color.RED;
     private int mBorderWidth = 20;
@@ -28,15 +28,15 @@ public class ProgressBar extends View {
     private int mProgressSize = 0;
     private int mMaxSize = 100;
 
-    public ProgressBar(Context context) {
+    public ProgressBarView(Context context) {
         this(context, null);
     }
 
-    public ProgressBar(Context context, @Nullable AttributeSet attrs) {
+    public ProgressBarView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public ProgressBar(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public ProgressBarView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initPaint(context, attrs);
     }

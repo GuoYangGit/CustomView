@@ -6,9 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.guoyang.customview.ColorTrackTextView.ColorTrackActivity;
-import com.example.guoyang.customview.ProgressBar.ProgressBarActivity;
+import com.example.guoyang.customview.ProgressBarView.ProgressBarActivity;
 import com.example.guoyang.customview.QQStepView.QQStepActivity;
-import com.example.guoyang.customview.QQStepView.QQStepView;
 
 public class MainActivity extends AppCompatActivity {
 

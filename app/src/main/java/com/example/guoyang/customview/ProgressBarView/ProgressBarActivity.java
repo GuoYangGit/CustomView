@@ -1,4 +1,4 @@
-package com.example.guoyang.customview.ProgressBar;
+package com.example.guoyang.customview.ProgressBarView;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -14,7 +14,7 @@ public class ProgressBarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_bar);
-        final ProgressBar progressBar = (ProgressBar) findViewById(R.id.ProgressBarView);
+        final ProgressBarView progressBarView = (ProgressBarView) findViewById(R.id.ProgressBarView);
         ValueAnimator animator = ObjectAnimator.ofFloat(0,100);
         animator.setDuration(3000);
         animator.setInterpolator(new AccelerateInterpolator());
@@ -22,7 +22,7 @@ public class ProgressBarActivity extends AppCompatActivity {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 float animatedValue = (float) animation.getAnimatedValue();
-                progressBar.setProgressSize((int) animatedValue);
+                progressBarView.setProgressSize((int) animatedValue);
             }
         });
         animator.start();

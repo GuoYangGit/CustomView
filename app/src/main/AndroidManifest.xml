@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".QQStepView.QQStepActivity" />
         <activity android:name=".ColorTrackTextView.ColorTrackActivity" />
-        <activity android:name=".ProgressBar.ProgressBarActivity"></activity>
+        <activity android:name=".ProgressBarView.ProgressBarActivity"></activity>
     </application>
 
 </manifest>
