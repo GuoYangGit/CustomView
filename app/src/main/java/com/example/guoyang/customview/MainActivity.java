@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.guoyang.customview.colorTrackTextView.ColorTrackActivity;
+import com.example.guoyang.customview.letterSideBar.LetterSideBarActivity;
 import com.example.guoyang.customview.progressBarView.ProgressBarActivity;
 import com.example.guoyang.customview.qqStepView.QQStepActivity;
 import com.example.guoyang.customview.ratingBarView.RatingBarActivity;
@@ -38,5 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void RatingBar(View view) {
         startActivity(new Intent(this,RatingBarActivity.class));
+    }
+
+    public void LetterSideBar(View view) {
+        startActivity(new Intent(this,LetterSideBarActivity.class));
     }
 }

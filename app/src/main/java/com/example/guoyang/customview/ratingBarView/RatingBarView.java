@@ -94,9 +94,7 @@ public class RatingBarView extends View {
                 int currentGrade = (int) (moveX / (mStarNormalBitmap.getWidth()+mBarPadding) + 1);
                 if (currentGrade < 0) currentGrade = 0;
                 if (currentGrade > mGradeNumber) currentGrade = mGradeNumber;
-                if (currentGrade == mCurrentGrade) {
-                    return true;
-                }
+                if (currentGrade == mCurrentGrade) return true;
                 mCurrentGrade = currentGrade;
                 invalidate();
                 break;

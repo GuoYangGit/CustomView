@@ -24,4 +24,9 @@
         <attr name="ratingBarGradeNumber" format="integer" />
         <attr name="ratingBarPadding" format="dimension" />
     </declare-styleable>
+    <declare-styleable name="LetterSideBar">
+        <attr name="letterSideBarTextSize" format="dimension" />
+        <attr name="letterSideBarCurrentColor" format="color" />
+        <attr name="letterSideBarTextColor" format="color" />
+    </declare-styleable>
 </resources>

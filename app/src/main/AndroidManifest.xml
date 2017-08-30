@@ -20,7 +20,8 @@
         <activity android:name=".colorTrackTextView.ColorTrackActivity" />
         <activity android:name=".progressBarView.ProgressBarActivity" />
         <activity android:name=".shapeView.ShapeViewActivity" />
-        <activity android:name=".ratingBarView.RatingBarActivity"></activity>
+        <activity android:name=".ratingBarView.RatingBarActivity" />
+        <activity android:name=".letterSideBar.LetterSideBarActivity"></activity>
     </application>
 
 </manifest>
