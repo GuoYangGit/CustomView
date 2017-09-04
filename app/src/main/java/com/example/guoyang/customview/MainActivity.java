@@ -12,6 +12,7 @@ import com.example.guoyang.customview.qqStepView.QQStepActivity;
 import com.example.guoyang.customview.ratingBarView.RatingBarActivity;
 import com.example.guoyang.customview.shapeView.ShapeView;
 import com.example.guoyang.customview.shapeView.ShapeViewActivity;
+import com.example.guoyang.customview.taglayout.TagLayoutActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,5 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void LetterSideBar(View view) {
         startActivity(new Intent(this,LetterSideBarActivity.class));
+    }
+
+    public void Laglatyout(View view) {
+        startActivity(new Intent(this,TagLayoutActivity.class));
     }
 }

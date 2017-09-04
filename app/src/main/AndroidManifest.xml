@@ -21,7 +21,8 @@
         <activity android:name=".progressBarView.ProgressBarActivity" />
         <activity android:name=".shapeView.ShapeViewActivity" />
         <activity android:name=".ratingBarView.RatingBarActivity" />
-        <activity android:name=".letterSideBar.LetterSideBarActivity"></activity>
+        <activity android:name=".letterSideBar.LetterSideBarActivity" />
+        <activity android:name=".taglayout.TagLayoutActivity"></activity>
     </application>
 
 </manifest>
