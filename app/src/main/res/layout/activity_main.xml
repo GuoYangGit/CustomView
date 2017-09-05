@@ -48,5 +48,11 @@
         android:layout_height="wrap_content"
         android:text="流式布局"
         android:onClick="Laglatyout"/>
+    <Button
+        android:id="@+id/KGSlidingMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仿酷狗侧滑"
+        android:onClick="KGSlidingMenu"/>
 
 </LinearLayout>

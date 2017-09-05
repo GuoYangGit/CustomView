@@ -29,4 +29,7 @@
         <attr name="letterSideBarCurrentColor" format="color" />
         <attr name="letterSideBarTextColor" format="color" />
     </declare-styleable>
+    <declare-styleable name="KGSlidingMenu">
+        <attr name="KGSlidingMenuMarginRight" format="dimension"/>
+    </declare-styleable>
 </resources>

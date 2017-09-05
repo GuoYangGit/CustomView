@@ -35,7 +35,7 @@ public class ColorTrackActivity extends AppCompatActivity {
 
     private void initIndicator() {
         for (int i = 0; i < items.length; i++) {
-            final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT);
             params.weight = 1;

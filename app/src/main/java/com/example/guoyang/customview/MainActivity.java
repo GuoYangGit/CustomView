@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.guoyang.customview.KGSlidingMenu.KGSlidingActivity;
 import com.example.guoyang.customview.colorTrackTextView.ColorTrackActivity;
 import com.example.guoyang.customview.letterSideBar.LetterSideBarActivity;
 import com.example.guoyang.customview.progressBarView.ProgressBarActivity;
@@ -48,5 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void Laglatyout(View view) {
         startActivity(new Intent(this,TagLayoutActivity.class));
+    }
+
+    public void KGSlidingMenu(View view) {
+        startActivity(new Intent(this,KGSlidingActivity.class));
     }
 }
