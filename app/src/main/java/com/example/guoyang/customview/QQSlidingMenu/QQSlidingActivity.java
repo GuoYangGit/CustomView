@@ -1,4 +1,4 @@
-package com.example.guoyang.customview.KGSlidingMenu;
+package com.example.guoyang.customview.QQSlidingMenu;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,12 +7,12 @@ import android.widget.Toast;
 
 import com.example.guoyang.customview.R;
 
-public class KGSlidingActivity extends AppCompatActivity {
+public class QQSlidingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kgsliding_menu);
+        setContentView(R.layout.activity_qqsliding);
     }
 
     public void toast(View view){

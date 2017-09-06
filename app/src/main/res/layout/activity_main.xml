@@ -54,5 +54,11 @@
         android:layout_height="wrap_content"
         android:text="仿酷狗侧滑"
         android:onClick="KGSlidingMenu"/>
+    <Button
+        android:id="@+id/QQSlidingMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仿QQ侧滑"
+        android:onClick="QQSlidingMenu"/>
 
 </LinearLayout>

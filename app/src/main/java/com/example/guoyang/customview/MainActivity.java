@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.guoyang.customview.KGSlidingMenu.KGSlidingActivity;
+import com.example.guoyang.customview.QQSlidingMenu.QQSlidingActivity;
 import com.example.guoyang.customview.colorTrackTextView.ColorTrackActivity;
 import com.example.guoyang.customview.letterSideBar.LetterSideBarActivity;
 import com.example.guoyang.customview.progressBarView.ProgressBarActivity;
@@ -53,5 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void KGSlidingMenu(View view) {
         startActivity(new Intent(this,KGSlidingActivity.class));
+    }
+
+    public void QQSlidingMenu(View view) {
+        startActivity(new Intent(this, QQSlidingActivity.class));
     }
 }

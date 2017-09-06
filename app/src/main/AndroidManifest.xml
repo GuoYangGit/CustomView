@@ -23,7 +23,8 @@
         <activity android:name=".ratingBarView.RatingBarActivity" />
         <activity android:name=".letterSideBar.LetterSideBarActivity" />
         <activity android:name=".taglayout.TagLayoutActivity" />
-        <activity android:name=".KGSlidingMenu.KGSlidingActivity"></activity>
+        <activity android:name=".KGSlidingMenu.KGSlidingActivity" />
+        <activity android:name=".QQSlidingMenu.QQSlidingActivity"></activity>
     </application>
 
 </manifest>

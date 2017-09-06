@@ -1,18 +1,21 @@
-package com.example.guoyang.customview.KGSlidingMenu;
+package com.example.guoyang.customview.QQSlidingMenu;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.HorizontalScrollView;
+import android.widget.RelativeLayout;
 
 import com.example.guoyang.customview.R;
 
@@ -22,8 +25,7 @@ import com.example.guoyang.customview.R;
 
 public class SlidingMenu extends HorizontalScrollView {
     private int mMenuWidth;
-    private View mContentView;
-    private View mMenuView;
+    private View mContentView,mMenuView,mShadowView;
     private GestureDetector mGestureDetector;
     private boolean mMenuIsOpen = false;
     private boolean isIntercept = false;
@@ -40,7 +42,8 @@ public class SlidingMenu extends HorizontalScrollView {
     public SlidingMenu(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.KGSlidingMenu);
-        float rightMargin = array.getDimension(R.styleable.KGSlidingMenu_KGSlidingMenuMarginRight, dip2px(context, 50));
+        float rightMargin = array.getDimension(R.styleable.KGSlidingMenu_KGSlidingMenuMarginRight,
+                dip2px(context, 50));
         mMenuWidth = (int) (getScreenWidth(context) - rightMargin);
         array.recycle();
         mGestureDetector = new GestureDetector(context, mGestureListener);
@@ -83,10 +86,19 @@ public class SlidingMenu extends HorizontalScrollView {
         ViewGroup.LayoutParams menuParams = mMenuView.getLayoutParams();
         menuParams.width = mMenuWidth;
         mMenuView.setLayoutParams(menuParams);
+
         mContentView = container.getChildAt(1);
         ViewGroup.LayoutParams contentParams = mContentView.getLayoutParams();
+        container.removeView(mContentView);
+        RelativeLayout contentContainer = new RelativeLayout(getContext());
+        contentContainer.addView(mContentView);
+        mShadowView = new View(getContext());
+        mShadowView.setBackgroundColor(Color.parseColor("#55000000"));
+        contentContainer.addView(mShadowView);
         contentParams.width = getScreenWidth(getContext());
-        mContentView.setLayoutParams(contentParams);
+        contentContainer.setLayoutParams(contentParams);
+        container.addView(contentContainer);
+        mShadowView.setAlpha(0.0f);
     }
 
     @Override
@@ -114,20 +126,10 @@ public class SlidingMenu extends HorizontalScrollView {
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
         super.onScrollChanged(l, t, oldl, oldt);
-        float scale = 1f * l / mMenuWidth;
-        //右边的缩放
-        float rightScale = 0.8f + 0.2f * scale;
-        ViewCompat.setPivotX(mContentView, 0);
-        ViewCompat.setPivotY(mContentView, mContentView.getMeasuredHeight() / 2);
-        ViewCompat.setScaleX(mContentView, rightScale);
-        ViewCompat.setScaleY(mContentView, rightScale);
-        //左边的位移与透明度变化
-        float alpha = 0.5f + (1 - scale) * 0.5f;
-        ViewCompat.setAlpha(mMenuView, alpha);
-        float leftScale = 0.7f + (1 - scale) * 0.3f;
-        ViewCompat.setScaleX(mMenuView, leftScale);
-        ViewCompat.setScaleY(mMenuView, leftScale);
-        ViewCompat.setTranslationX(mMenuView, 0.2f * l);
+        float scale = 1f*l/mMenuWidth;
+        float alphaScale = 1-scale;
+        mShadowView.setAlpha(alphaScale);
+        ViewCompat.setTranslationX(mMenuView, 0.7f * l);
     }
 
     @Override
