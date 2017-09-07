@@ -153,7 +153,7 @@ public class SlidingMenu extends HorizontalScrollView {
      * 打开菜单 滚动到0的位置
      */
     private void openMenu() {
-        scrollTo(0,0);
+        smoothScrollTo(0,0);
         mMenuIsOpen = true;
     }
 
@@ -161,7 +161,7 @@ public class SlidingMenu extends HorizontalScrollView {
      * 关闭菜单 滚动到mMenuWidth的位置
      */
     private void closeMenu() {
-        scrollTo(mMenuWidth,0);
+        smoothScrollTo(mMenuWidth,0);
         mMenuIsOpen = false;
     }
 

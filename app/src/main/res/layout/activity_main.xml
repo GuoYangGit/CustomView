@@ -60,5 +60,10 @@
         android:layout_height="wrap_content"
         android:text="仿QQ侧滑"
         android:onClick="QQSlidingMenu"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dfd"
+        android:onClick="VerticalDragListView"/>
 
 </LinearLayout>

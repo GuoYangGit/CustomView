@@ -24,7 +24,8 @@
         <activity android:name=".letterSideBar.LetterSideBarActivity" />
         <activity android:name=".taglayout.TagLayoutActivity" />
         <activity android:name=".KGSlidingMenu.KGSlidingActivity" />
-        <activity android:name=".QQSlidingMenu.QQSlidingActivity"></activity>
+        <activity android:name=".QQSlidingMenu.QQSlidingActivity" />
+        <activity android:name=".verticaldraglistview.VerticalDragActivity"></activity>
     </application>
 
 </manifest>

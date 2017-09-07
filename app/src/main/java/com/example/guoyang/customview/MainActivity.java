@@ -15,6 +15,7 @@ import com.example.guoyang.customview.ratingBarView.RatingBarActivity;
 import com.example.guoyang.customview.shapeView.ShapeView;
 import com.example.guoyang.customview.shapeView.ShapeViewActivity;
 import com.example.guoyang.customview.taglayout.TagLayoutActivity;
+import com.example.guoyang.customview.verticaldraglistview.VerticalDragActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,5 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void QQSlidingMenu(View view) {
         startActivity(new Intent(this, QQSlidingActivity.class));
+    }
+
+    public void VerticalDragListView(View view) {
+        startActivity(new Intent(this, VerticalDragActivity.class));
     }
 }
