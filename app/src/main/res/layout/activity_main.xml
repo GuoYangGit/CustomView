@@ -6,64 +6,96 @@
     android:orientation="vertical"
     android:padding="10dp"
     tools:context="com.example.guoyang.customview.MainActivity">
-    <Button
-        android:id="@+id/QQStepView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="仿qq计步器"
-        android:onClick="QQStepview"/>
-    <Button
-        android:id="@+id/ColorTrackTextview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="字体变色"
-        android:onClick="ColorTrackTextview"/>
-    <Button
-        android:id="@+id/ProgressBarView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="进度条"
-        android:onClick="ProgressBarView"/>
-    <Button
-        android:id="@+id/ShapeView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="58同城加载动画"
-        android:onClick="ShapeView"/>
-    <Button
-        android:id="@+id/RatingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="评分控件"
-        android:onClick="RatingBar"/>
-    <Button
-        android:id="@+id/LetterSideBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="字母索引"
-        android:onClick="LetterSideBar"/>
-    <Button
-        android:id="@+id/Laglatyout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="流式布局"
-        android:onClick="Laglatyout"/>
-    <Button
-        android:id="@+id/KGSlidingMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="仿酷狗侧滑"
-        android:onClick="KGSlidingMenu"/>
-    <Button
-        android:id="@+id/QQSlidingMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="仿QQ侧滑"
-        android:onClick="QQSlidingMenu"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="dfd"
-        android:onClick="VerticalDragListView"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/QQStepView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="QQStepview"
+                android:text="仿qq计步器" />
+
+            <Button
+                android:id="@+id/ColorTrackTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ColorTrackTextview"
+                android:text="字体变色" />
+
+            <Button
+                android:id="@+id/ProgressBarView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ProgressBarView"
+                android:text="进度条" />
+
+            <Button
+                android:id="@+id/ShapeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ShapeView"
+                android:text="58同城加载动画" />
+
+            <Button
+                android:id="@+id/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="RatingBar"
+                android:text="评分控件" />
+
+            <Button
+                android:id="@+id/LetterSideBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="LetterSideBar"
+                android:text="字母索引" />
+
+            <Button
+                android:id="@+id/Laglatyout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Laglatyout"
+                android:text="流式布局" />
+
+            <Button
+                android:id="@+id/KGSlidingMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="KGSlidingMenu"
+                android:text="仿酷狗侧滑" />
+
+            <Button
+                android:id="@+id/QQSlidingMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="QQSlidingMenu"
+                android:text="仿QQ侧滑" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="VerticalDragListView"
+                android:text="仿二手车之家下拉" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="LockPattenView"
+                android:text="九宫格解锁" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Statusbar"
+                android:text="透明式状态栏" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
